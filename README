@@ -1,0 +1,3 @@
+Distributed Multi-Message Threshold (DMMT)
+
+A system that allows decryption if a threshold number of ciphertexts are obtained. An encryptor can create ciphertext with a symmetric key and a chosen threshold value t. If a decryptor obtains t ciphertexts, decryption can be performed. Ciphertexts generated with a key belong to a "domain", which is associated with a threshold value. A domain "owner" is someone who knows its symmetric key. They can then create ciphertexts. A domain owner can also create "shares" (which can be bundled as ciphertexts). If a user learns t shares where t is the threshold of the domain, then he can compute the symmatric key, and then become an "owner" of the domain.
